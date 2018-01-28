@@ -5,16 +5,22 @@ if(!instance_exists(target)){
 	target = o_player;
 }else{
 
-if(abs((x+width/2)-target.x) > 1){
-	x += round((target.x-(x+width/2))*smoothing);
-}else{
-	x = target.x-width/2;
-}
-if(abs((y+height/2)-target.y) > 1){
-	y += round((target.y-(y+height/2))*smoothing);
-}else{
-	y = target.y-height/2;
-}
+	if(abs((x+width/2)-target.x) > 1){
+		x += round((target.x-(x+width/2))*smoothing);
+	}else{
+		x = target.x-width/2;
+	}
+	if(abs((y+height/2)-target.y) > 1){
+		y += round((target.y-(y+height/2))*smoothing);
+	}else{
+		y = target.y-height/2;
+	}
+
+	if(snap){
+		x = target.x-width/2;
+		y = target.y-height/2;
+		snap = false;
+	}
 
 }
 

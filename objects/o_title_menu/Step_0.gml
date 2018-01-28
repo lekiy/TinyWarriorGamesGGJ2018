@@ -22,3 +22,15 @@ if(selected_option > 1){
 if(selected_option < 0){
 	selected_option = 1;
 }
+
+if(keyboard_check_pressed(vk_escape)){
+	game_end();	
+}
+
+/*if(keyboard_check_pressed(vk_numpad4)){
+	room_goto_previous();
+}*/
+
+if(keyboard_check_pressed(vk_numpad6)){
+	room_goto_next();
+}

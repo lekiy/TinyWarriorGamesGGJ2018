@@ -3,6 +3,8 @@
 
 camera = view_camera[0];
 
+snap = false;
+
 target = noone;
 
 width = camera_get_view_width(camera);
