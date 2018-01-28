@@ -719,14 +719,6 @@
             }
         },
         {
-            "Key": "7ff45a7a-f4f6-4de7-9048-7252b21da009",
-            "Value": {
-                "id": "7f6923f2-49c3-4891-b16e-bbb80890f847",
-                "resourcePath": "objects\\o_coin_keeper\\o_coin_keeper.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "817f4cfc-7329-4164-bf7b-ee88c6e4d486",
             "Value": {
                 "id": "0c0c5d31-6559-4d1a-b091-bb63e0e24f50",
