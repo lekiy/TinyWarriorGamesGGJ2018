@@ -9,7 +9,8 @@
         "26b8445a-3e3b-4f70-bb00-f32238d4d12a",
         "71d4dd7d-7093-45fa-8990-62ff601686ce",
         "b8b9acdc-eb58-4ce4-b205-4bbe7162f79b",
-        "a246ffd2-c58c-492d-b9a6-3eed28a0643c"
+        "a246ffd2-c58c-492d-b9a6-3eed28a0643c",
+        "7f8dd633-d1c0-4732-bb4b-67e335d20133"
     ],
     "filterType": "GMSprite",
     "folderName": "Ending Slides",

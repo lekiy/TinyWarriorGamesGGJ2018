@@ -10,11 +10,13 @@ if(place_meeting(x+vel_x, y, o_solid)){
 	if(place_meeting(x+sign(vel_x), y, o_solid_slope)){
 		while(place_meeting(x, y, o_solid_slope)){
 			y--;
+			//x-= sign(vel_x);
 		}
 	}else{
 		while(!place_meeting(x+sign(vel_x), y, o_solid)){
 			x+=sign(vel_x);	
 		}
+		x-=sign(vel_x);
 		vel_x = 0;
 		accel_x = 0;
 	}

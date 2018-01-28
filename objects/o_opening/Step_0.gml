@@ -13,3 +13,7 @@ camera_set_view_pos(camera, x, y);
 if(slide_counter > 2){
 	alpha+= 1/(room_speed*3);	
 }
+
+if(keyboard_check_pressed(ord("X"))){
+	room_goto_next();	
+}
