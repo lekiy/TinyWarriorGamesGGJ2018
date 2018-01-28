@@ -1,0 +1,1 @@
+current_type = energy_type.fire;
