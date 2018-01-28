@@ -54,6 +54,16 @@ if(is_throwing){
 }
 
 
+if(!on_ground){
+	fall_time++;	
+}else if(on_ground && fall_time > room_speed * 0.25){
+	fall_time = 0;
+	var dust_fx = instance_create_layer(x, y+1, "Instances", o_dust_fx);
+	dust_fx.depth -= 1;
+}else{
+	fall_time = 0;
+}
+
 //Handles running states
 script_execute(state_scripts[current_state]);
 

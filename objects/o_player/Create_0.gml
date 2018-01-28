@@ -13,6 +13,8 @@ enum player_state {
 	death
 }
 
+fall_time = 0;
+
 current_state = player_state.idle;
 //player_state_carry_idle();
 state_scripts[0] = player_state_idle;
