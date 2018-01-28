@@ -3,3 +3,5 @@
 if(image_index < 3){
 	instance_destroy(other);
 }
+
+global.player_dead = true;

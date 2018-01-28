@@ -3,6 +3,7 @@
 event_inherited();
 
 burning = false;
+ignited = false;
 image_speed = 0;
 
 nearby[0] = noone;

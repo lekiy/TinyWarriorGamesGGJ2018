@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "bba9aca2-1be4-40f9-b56a-0efd5d2f89db",
+            "Value": {
+                "id": "6d53cf42-9c62-4a3d-80b9-cd47f41dda75",
+                "resourcePath": "objects\\o_death_text\\o_death_text.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bbc3eb38-c00b-469f-bf7e-a65d3a1cb597",
             "Value": {
                 "id": "783b52a1-7abf-40a4-8a0b-dce2990c3e8f",

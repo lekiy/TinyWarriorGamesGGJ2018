@@ -14,8 +14,12 @@ if(image_index > 5 && burning){
 		if(instance_exists(nearby[i])){
 			nearby[i].burning = true;
 			nearby[i].image_speed = 1;
-			audio_play_sound(a_block_burn, 4, false);
 		}
 	}
 	
+}
+
+if(burning && !ignited){
+	ignited = true;
+	audio_play_sound(a_block_burn, 4, false);
 }
