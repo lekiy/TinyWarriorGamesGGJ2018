@@ -27,9 +27,9 @@ if(keyboard_check_pressed(vk_escape)){
 	game_end();	
 }
 
-/*if(keyboard_check_pressed(vk_numpad4)){
-	room_goto_previous();
-}*/
+if(keyboard_check_pressed(vk_numpad5)){
+	room_goto(rm_opening);
+}
 
 if(keyboard_check_pressed(vk_numpad6)){
 	room_goto_next();
