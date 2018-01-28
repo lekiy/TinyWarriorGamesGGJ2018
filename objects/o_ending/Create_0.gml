@@ -9,7 +9,8 @@ alpha[1] = 0;
 alpha[2] = 0;
 credits_y = 0;
 audio_stop_sound(a_level_music);
+audio_stop_sound(a_title_music);
 audio_play_sound(a_laser_cutscene, 6, false);
 audio_play_sound(a_end_music, 6, true);
-
+global.score_font = font_add_sprite_ext(s_numbers, "1234567890", true, 2);
 display_set_gui_size(480, 360);

@@ -27,6 +27,9 @@ if(slide_counter > 5){
 if(slide_counter > 14){
 	alpha[2]+= 1/(room_speed*3);	
 }
+if(slide_counter > 16){
+	room_goto(rm_title_menu);	
+}
 
 alpha[0] = min(alpha[0], 1);
 alpha[1] = min(alpha[1], 1);
