@@ -5,6 +5,7 @@ dir_x  = keyboard_check(vk_right)-keyboard_check(vk_left);
 
 if(keyboard_check_pressed(ord("Z")) && on_ground){
 	vel_y -= jump_vel;
+	audio_play_sound(a_jump, 7, false);
 }
 
 if(dir_x != 0){
@@ -26,6 +27,7 @@ if(!item_held){
 }else{
 	if(keyboard_check_pressed(ord("X"))){
 		is_throwing = true;
+		audio_play_sound(a_throw, 7, false);
 		image_index = 0;
 		item_held = false;
 		held_obj.vel_x = throw_vel*facing_dir;

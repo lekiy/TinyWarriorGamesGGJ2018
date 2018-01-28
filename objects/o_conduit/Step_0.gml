@@ -20,6 +20,7 @@ if(current_type == energy_type.fire){
 		if(point_distance(x, y, burnable.x, burnable.y) <= sprite_get_width(msk_conduit)/2+4){
 			burnable.burning = true;
 			burnable.image_speed = 1;
+			audio_play_sound(a_block_burn, 4, false);
 		}
 	}
 	var explodable = instance_nearest(x, y, o_bomb);
