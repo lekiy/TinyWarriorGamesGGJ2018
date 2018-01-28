@@ -12,4 +12,5 @@ enum energy_type {
 initialize_movement_variables();
 
 current_type = energy_type.null;
+held = false;
 

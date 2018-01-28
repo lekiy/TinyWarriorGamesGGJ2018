@@ -22,6 +22,7 @@ if(!item_held){
 		if(place_meeting(x, y, o_conduit)){
 			held_obj = instance_place(x, y, o_conduit)	;
 			item_held = true;
+			held_obj.held = true;
 		}
 	}
 }else{
@@ -30,12 +31,14 @@ if(!item_held){
 		audio_play_sound(a_throw, 7, false);
 		image_index = 0;
 		item_held = false;
-		held_obj.vel_x = throw_vel*facing_dir;
+		held_obj.held = false;
+		held_obj.vel_x = (throw_vel+3)*facing_dir;
 		held_obj.vel_y = -throw_vel;
 		held_obj = noone;
 	}
 	if(keyboard_check_pressed(vk_down)){
 		item_held = false;
+		held_obj.held = false;
 		held_obj = noone;
 	}
 }
