@@ -23,6 +23,7 @@ if(!item_held){
 			held_obj = instance_place(x, y, o_conduit)	;
 			item_held = true;
 			held_obj.held = true;
+			audio_play_sound(a_lift_crystal, 4, false);
 		}
 	}
 }else{

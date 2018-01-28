@@ -2,6 +2,6 @@
 // You can write your code in this editor
 if(image_index < 3){
 	instance_destroy(other);
+	global.player_dead = true;
 }
 
-global.player_dead = true;

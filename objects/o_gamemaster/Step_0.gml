@@ -6,7 +6,7 @@ if(keyboard_check_pressed(vk_enter)){
 
 if(global.player_dead && !instance_exists(o_death_text)){
 	text = instance_create_layer(0, 0, "Instances", o_death_text);
-	text.x = display_get_gui_width()/2-o_death_text.total_width/2;
+	text.x = display_get_gui_width()/2-text.total_width/2;
 	text.y = display_get_gui_height()/2;
 }
 

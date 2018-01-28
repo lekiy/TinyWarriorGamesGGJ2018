@@ -12,3 +12,8 @@ global.score_font = font_add_sprite_ext(s_numbers, "1234567890", true, 2);
 display_set_gui_size(240, 180);
 
 alpha = 1;
+audio_stop_sound(a_level_music);
+audio_stop_sound(a_title_music);
+if(room != rm_lvl_7){
+		audio_play_sound(a_level_music, 6, true);
+}

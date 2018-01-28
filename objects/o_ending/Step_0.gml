@@ -15,13 +15,16 @@ layer_x("Bg3", x*0.3);
 
 camera_set_view_pos(camera, x, y);
 
-if(slide_counter > 4){
-	alpha[0]+= 1/(room_speed*3);
+if(slide_counter > 1){
+	alpha[0] -= 1/(room_speed*3);
 }
-if(slide_counter > 5){
+if(slide_counter > 4){
 	alpha[1]+= 1/(room_speed*3);	
 }
-if(slide_counter > 6){
+if(slide_counter > 5){
+	credits_y+=0.5;	
+}
+if(slide_counter > 14){
 	alpha[2]+= 1/(room_speed*3);	
 }
 
@@ -38,4 +41,8 @@ if(slide_counter == 0){
 	}
 }else if(slide_counter == 2){
 		pan_start = true;
+}
+
+if(slide_counter > 6 && keyboard_check_pressed(ord("X"))){
+	room_goto(rm_title_menu);
 }
