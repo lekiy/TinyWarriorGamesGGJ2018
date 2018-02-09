@@ -1287,6 +1287,14 @@
             }
         },
         {
+            "Key": "edccaa73-2b06-4675-8c0e-286475f1bf82",
+            "Value": {
+                "id": "5349f796-1eaa-4fd9-8d23-928c5c4ef7b1",
+                "resourcePath": "notes\\note0.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "eff0118e-e85f-4248-a25e-aba153c08857",
             "Value": {
                 "id": "ca66ba1e-4d30-4973-8834-ebd7b08bd83e",

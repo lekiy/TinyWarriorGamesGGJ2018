@@ -9,6 +9,9 @@ enum energy_type {
 	magntism
 }
 
+burnable = noone;
+burn_dist = 99999;
+burn_range = 24;
 initialize_movement_variables();
 
 current_type = energy_type.null;

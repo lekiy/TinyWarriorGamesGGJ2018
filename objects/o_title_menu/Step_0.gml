@@ -28,7 +28,7 @@ if(keyboard_check_pressed(vk_escape)){
 }
 
 if(keyboard_check_pressed(vk_numpad5)){
-	room_goto(rm_ending);
+	room_goto(rm_test);
 }
 
 if(keyboard_check_pressed(vk_numpad6)){

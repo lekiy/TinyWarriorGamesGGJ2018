@@ -1,0 +1,13 @@
+Crystal Conduit TODO:
+
+Bug List:
+	Player gets stuck on corners while traveling up slopes
+	Crystal gets stuck in ceiling if thrown while clipping with it.
+	Death message text gets lost after the 4th ish level.
+	Flames dont correctly burn bushes below from every position.
+	Level 2 can get the player trapped.
+	Coins dont persist between levels.
+
+Tweaks:
+	Game fades out to fast after ending dumpster drop.
+	

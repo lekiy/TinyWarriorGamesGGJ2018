@@ -17,16 +17,17 @@ switch(current_type){
 }
 
 if(current_type == energy_type.fire){
-	var burnable = instance_nearest(x, y, o_block_grass);
+	burnable = instance_nearest(x, y, o_block_grass);
 	if(instance_exists(burnable)){
-		if(point_distance(x, y, burnable.x+burnable.sprite_width/2, burnable.y+burnable.sprite_height/2) <= 24){
+		burn_dist = (point_distance(x, y, burnable.x+burnable.sprite_width/2, burnable.y+burnable.sprite_height/2));
+		if(burn_dist  <= burn_range){
 			burnable.burning = true;
 			burnable.image_speed = 1;
 		}
 	}
 	var explodable = instance_nearest(x, y, o_bomb);
 	if(instance_exists(explodable)){
-		if(point_distance(x, y, explodable.x+explodable.sprite_width/2, explodable.y+explodable.sprite_height/2) <= 24){
+		if(point_distance(x, y, explodable.x+explodable.sprite_width/2, explodable.y+explodable.sprite_height/2) <= burn_range){
 			explodable.exploded = true;
 		}
 	}
