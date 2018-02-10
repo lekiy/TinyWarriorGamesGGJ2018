@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 
 enum energy_type {
 	null,
@@ -12,8 +13,6 @@ enum energy_type {
 burnable = noone;
 burn_dist = 99999;
 burn_range = 24;
-initialize_movement_variables();
-
 current_type = energy_type.null;
-held = false;
+
 

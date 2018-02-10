@@ -1,10 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(!held){
-	handle_movement_vel();
-	handle_collisions_with_platforms();
-}
+event_inherited();
 
 switch(current_type){
 	case energy_type.null: 

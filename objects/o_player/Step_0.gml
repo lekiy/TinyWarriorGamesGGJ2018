@@ -19,28 +19,30 @@ handle_collisions_with_platforms();
 
 if(!item_held){
 	if(keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_down)){
-		if(place_meeting(x, y, o_conduit)){
-			held_obj = instance_place(x, y, o_conduit)	;
+		if(place_meeting(x, y, o_carriable)){
+			held_obj = instance_place(x, y, o_carriable)	;
 			item_held = true;
 			held_obj.held = true;
 			audio_play_sound(a_lift_crystal, 4, false);
 		}
 	}
 }else{
-	if(keyboard_check_pressed(ord("X"))){
-		is_throwing = true;
-		audio_play_sound(a_throw, 7, false);
-		image_index = 0;
-		item_held = false;
-		held_obj.held = false;
-		held_obj.vel_x = (throw_vel+3)*facing_dir;
-		held_obj.vel_y = -throw_vel;
-		held_obj = noone;
-	}
-	if(keyboard_check_pressed(vk_down)){
-		item_held = false;
-		held_obj.held = false;
-		held_obj = noone;
+	if(instance_exists(held_obj)){
+		if(keyboard_check_pressed(ord("X"))){
+			is_throwing = true;
+			audio_play_sound(a_throw, 7, false);
+			image_index = 0;
+			item_held = false;
+			held_obj.held = false;
+			held_obj.vel_x = (throw_vel+3)*facing_dir;
+			held_obj.vel_y = -throw_vel;
+			held_obj = noone;
+		}
+		if(keyboard_check_pressed(vk_down)){
+			item_held = false;
+			held_obj.held = false;
+			held_obj = noone;
+		}
 	}
 }
 
