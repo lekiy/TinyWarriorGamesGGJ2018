@@ -1,5 +1,7 @@
 /// @description initialize game variables.
 
+#macro TILE_SIZE 16
+
 camera = instance_create_layer(x, y, "Instances", o_camera);
 camera.snap = true;
 show_debug_message("Entering Room: "+room_get_name(room));

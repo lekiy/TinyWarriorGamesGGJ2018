@@ -3,11 +3,11 @@
 
 draw_self();
 
-if(instance_exists(burnable)){
-	if(burn_dist <= burn_range) draw_set_color(c_red);
+/*if(instance_exists(burnable)){
+	if(burn_dist >= burn_range) draw_set_color(c_red);
 	else draw_set_color(c_green);
 	
-	draw_line(x, y, burnable.x, burnable.y);
+	draw_line(x, y, burnable.x+TILE_SIZE/2, burnable.y+TILE_SIZE/2);
 	draw_set_color(c_white);
 }
 /*draw_set_color(c_red);
